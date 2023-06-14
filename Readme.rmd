@@ -1,0 +1,73 @@
+---
+title: "Lua"
+author: "Sergio Pedro Rodrigues Oliveira"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output:
+  md_document:
+    number_sections: true
+    variant: markdown_github
+  odt_document: 
+    number_sections: true
+  pdf_document: 
+    number_sections: true
+    toc: false
+  github_document: 
+  html_document:
+    number_sections: true
+    df_print: paged
+  word_document: 
+    toc: TRUE
+    number_sections: true
+---
+
+\thispagestyle{empty}
+
+\newpage
+\pagenumbering{roman}
+
+```{=latex}
+\setcounter{tocdepth}{4}
+\renewcommand{\contentsname}{SUMÁRIO}
+\tableofcontents
+```
+
+\newpage
+
+```{=latex}
+\setcounter{tocdepth}{4}
+\renewcommand{\listfigurename}{LISTA DE FIGURAS}
+\listoffigures
+```
+
+\newpage
+
+```{=latex}
+\setcounter{tocdepth}{4}
+\renewcommand{\listtablename}{LISTA DE TABELAS}
+\listoftables
+```
+
+```{r Pacotes, message=FALSE, warning=FALSE, echo=FALSE}
+library(knitr)
+library(rmarkdown)
+library(readr)
+library(tibble)
+library(magrittr)
+library(dplyr)
+library(tidyr)
+library(data.table)
+```
+
+\newpage
+
+# OBJETIVO
+
+Estudo dirigido de linguagem Lua.\
+
+\pagenumbering{arabic}
+\newpage
+
+# REFERÊNCIA
+
+Livro: Introdução à Linguagem Lua\
+Editora: Novatec\
